@@ -13,6 +13,11 @@ increes.addEventListener("click", function () {
 })
 
 decrees.addEventListener('click', function () {
-    realQuantity--
-    quantity.innerText = realQuantity
+    if (realQuantity > 1) {
+        realQuantity--
+        quantity.innerText = realQuantity
+
+    } else {
+        alert('আর কমানো যাবে না! 🛑')
+    }
 })
